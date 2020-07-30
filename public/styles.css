@@ -273,6 +273,7 @@ p{
 .bot-body{
     height: 400px;
     overflow: scroll;
+    padding: 0.5em 0.5em;
 }
 .bot-body::-webkit-scrollbar {
     display: none;
