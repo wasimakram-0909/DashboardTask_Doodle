@@ -550,7 +550,7 @@ tbody tr td:first-child{
         width:45px;
     }
     .chat-msg p{
-        padding: 0.5em
+        padding: 0.5em !important;
     }
     .headerContainer{
         padding:0 0 0 65px;
@@ -558,6 +558,12 @@ tbody tr td:first-child{
     .top-menu-search{
         display: none;
     } 
+    .dashboard_container{
+        padding:2%;
+    }
+    .dashboard_grid.p-grid{
+        padding: 0;
+    }
     .add-contact-btn{
         display: flex;
         align-items: flex-end;
@@ -569,7 +575,7 @@ tbody tr td:first-child{
     }
     .details-container{
         position: fixed;
-        bottom: 0;
+        bottom: 1em;
         right: 3%;
         width: 270px;
         padding:1em;
