@@ -5,7 +5,6 @@ const ChatBot = (props)=>{
     const dispatch = useDispatch();
     let { setShowChatbot , selectedContact = {}, loggedUser = {},setMsgs, msgs} = props;
     let { first_name = "", last_name = "", color="" } = selectedContact;
-    // let chatArr = [];
     let userName = loggedUser.name.split(" ");
 
     let chatMsgs = useSelector(state=> state.Chats.messages);

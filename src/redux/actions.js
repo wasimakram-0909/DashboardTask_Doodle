@@ -34,22 +34,6 @@ export const actionLoginUser = (user) => {
     })
 }
 
-export const actionSendMessage = (msg) =>{
-
-    return({
-        type:SENT_MESSAGE,
-        payload:msg
-    })
-} 
-
-export const actionGetMessage = (msg) => {
-    
-    return({
-        type:GET_MESSAGES,
-        payload:msg
-    })
-}
- 
 export const actionCreateNewContact = (newContact) => {
     return({
         type:ADD_NEW_CONTACT,

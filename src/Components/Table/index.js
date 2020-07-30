@@ -15,7 +15,6 @@ const Table = (props) => {
     setMsgs
   } = props;
   const [deleteContacts, setDeleteContacts] = useState([]);
-  //   console.log(tableData, "tableData in table");
 
   const handleCheckbox = (e, ind) => {
     if (e.target.checked) {
@@ -26,24 +25,8 @@ const Table = (props) => {
     }
   };
   
-  // search Functionality
-
-  // let contactsTableData = useSelector((state) => {
-  //   let searcedVal = state.ContactsList.searchedValue;
-  //   console.log(searcedVal,"searcedVal");
-  //   if(searcedVal){
-  //       res => Object.keys(res).filter(
-  //         res2 => {
-  //           return typeof(res[res2]) === "string" ? console.log("matched",res[res2].toUpperCase() === searcedVal) : ""
-  //           }
-  //         )
-  //       ))
-  //   }else{return tableData}
-  // });
-
     const handleDelete = () => {
       if(deleteContacts.length){
-        console.log("deleated")
           dispatch(actionDeleteContact(deleteContacts))
           setDeleteContacts([]);
       }

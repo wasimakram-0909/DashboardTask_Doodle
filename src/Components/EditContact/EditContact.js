@@ -35,17 +35,15 @@ const EditContact = (props) => {
 			<div className="modal-header">
 				<span className="close fa fa-times" onClick={()=>setShowEditContact(false)}> </span>
 					<p>{edit?"Edit contact":"Add new contact"}</p>
-			</div>
-			{/* <div className="modal-body "> */}
-				<form className="modal-body"> 
-					<input placeholder="First Name" type="text" value={newContact.first_name} className="formItem" name="first_name" onChange={(e)=>handleChange(e)}/>
-					<input placeholder="Last Name" type="text" value={newContact.last_name} className="formItem" name="last_name" onChange={(e)=>handleChange(e)}/>
-					<input placeholder="Email" type="email" value={newContact.email} className="formItem" name="email" onChange={(e)=>handleChange(e)}/>
-					<input placeholder="Company" type="text" value={newContact.company} className="formItem" name="company" onChange={(e)=>handleChange(e)}/>
-					{err ? <span className="err" >Please enter all details</span>:""}
-				</form>
-			{/* </div> */}
-			<div className="modal-footer">
+				</div>
+					<form className="modal-body"> 
+						<input placeholder="First Name" type="text" value={newContact.first_name} className="formItem" name="first_name" onChange={(e)=>handleChange(e)}/>
+						<input placeholder="Last Name" type="text" value={newContact.last_name} className="formItem" name="last_name" onChange={(e)=>handleChange(e)}/>
+						<input placeholder="Email" type="email" value={newContact.email} className="formItem" name="email" onChange={(e)=>handleChange(e)}/>
+						<input placeholder="Company" type="text" value={newContact.company} className="formItem" name="company" onChange={(e)=>handleChange(e)}/>
+						{err ? <span className="err" >Please enter all details</span>:""}
+					</form>
+				<div className="modal-footer">
 				<span className="footer-btn save-btn" onClick={()=>onSave()}>Save</span>
 				<span className="footer-btn cancel-btn" onClick={()=>setShowEditContact(false)}>Cancel</span>
 			</div>
