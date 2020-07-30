@@ -1,0 +1,8 @@
+export const STORE_CONTACTS = "STORE_CONTACTS";
+export const ADD_NEW_CONTACT = "ADD_NEW_CONTACT";
+export const DELETE_CONTACT = "DELETE_CONTACT";
+export const EDIT_CONTACT = "EDIT_CONTACT";
+export const LOGIN_USER = "LOGIN_USER";
+export const SENT_MESSAGE = "SENT_MESSAGE";
+export const GET_MESSAGES = "GET_MESSAGES";
+export const GENERIC_ACTION = "GENERIC_ACTION";
